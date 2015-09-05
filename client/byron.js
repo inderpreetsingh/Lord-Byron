@@ -30,15 +30,12 @@ Template.docItem.events = {
   }
 };
 
-Session.setDefault("editorType", "ace");
+Session.setDefault("editorType", "textarea");
 
 Template.docTitle.helpers({
   title: function() {
     var ref;
     return (ref = Documents.findOne(this + "")) != null ? ref.title : void 0;
-  },
-  editorType: function(type) {
-    return Session.equals("editorType", type);
   }
 });
 
@@ -68,35 +65,10 @@ Template.editor.events = {
     Session.set("document", null);
     return Meteor.call("deleteDocument", id);
   },
-  "change input[name=editor]": function(e) {
-    return Sessio(n.set("editorType", e.target.value));
-  }
 };
 
 Template.editor.helpers({
   textarea: function() {
     return Session.equals("editorType", "textarea");
-  },
-  cm: function() {
-    return Session.equals("editorType", "cm");
-  },
-  ace: function() {
-    return Session.equals("editorType", "ace");
-  },
-  configAce: function() {
-    return function(ace) {
-      ace.setTheme('ace/theme/monokai');
-      ace.setShowPrintMargin(false);
-      return ace.getSession().setUseWrapMode(true);
-    };
-  },
-  configCM: function() {
-    return function(cm) {
-      cm.setOption("theme", "default");
-      cm.setOption("lineNumbers", true);
-      cm.setOption("lineWrapping", true);
-      cm.setOption("smartIndent", true);
-      return cm.setOption("indentWithTabs", true);
-    };
   }
 });
