@@ -1,5 +1,5 @@
 <head>
-  <title>Meteor Docs!</title>
+  <title>Lord Byron</title>
 </head>
 
 <body>  
@@ -49,7 +49,13 @@
     {{#with docid}}
         {{> docTitle this}}
             {{> sharejsText docid=this id="editor"}}
+            {{> viewMode }}
     {{/with}}
+</template>
+
+<template name="viewMode">
+    <div class="the-text">
+    </div>
 </template>
 
 <template name="docTitle">

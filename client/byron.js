@@ -7,7 +7,7 @@ Template.docList.helpers({
 Template.docList.events = {
   "click button": function() {
     return Documents.insert({
-      title: "untitled"
+      title: "Lord Byron"
     }, function(err, id) {
       if (!id) {
         return;
@@ -65,6 +65,10 @@ Template.editor.events = {
     Session.set("document", null);
     return Meteor.call("deleteDocument", id);
   },
+  "input #editor": function(e) {
+     text = $("#editor").val();
+      console.log(text);
+  },
 };
 
 Template.editor.helpers({
@@ -72,3 +76,11 @@ Template.editor.helpers({
     return Session.equals("editorType", "textarea");
   }
 });
+
+Template.editor.rendered = function() {
+ /*setInterval(function(){
+     $(".the-text").html(" ");
+      text = $("#editor").val();
+      $(".the-text").html(text);
+ }, 100);*/
+}
