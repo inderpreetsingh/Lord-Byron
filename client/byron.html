@@ -1,5 +1,5 @@
 <head>
-  <title>Lord Byron</title>
+  <title> Lord Byron </title>
 </head>
 
 <body>  
@@ -7,36 +7,22 @@
 </body>
 
 <template name="main">
-    <div class="container full-height">
-        <div class="row upper">
-            <div class="col-xs-3 full-height">
-                {{> docList}}
-            </div>
-            <div class="col-xs-9 editor-container full-height">
+ 
+         {{> docList}}             
+ 
                 {{> editor}}
-            </div>
-	    <div class="tool">
-		{{> languageTools}}
-	    </div>
-        </div>
-        <div class="row footer">
-            <div class="col-xs-3">{{! placeholder}}</div>
-            <div class="col-xs-9">
-                <h3>Edit from multiple browsers for maximum wow!</h3>
-            </div>
-        </div>
-    </div>
+                
+ 		        {{> languageTools}}
+ 		        
+                {{! placeholder}}
+            
 </template>
 
 <template name="docList">
-    <h3>Pick a document...</h3>
-    <ul class="nav nav-pills nav-stacked" id="list">
     {{#each documents}}
     {{> docItem}}
     {{/each}}
-    </ul>
-    <h3>...or start a new one:</h3>
-    <button class="btn btn-warning">New document</button>
+    <button >New document</button>    
 </template>
 
 <template name="docItem">
@@ -59,10 +45,8 @@
 </template>
 
 <template name="docTitle">
-    <div class="navbar navbar-default">
-        <form class="navbar-form pull-left">
+        <form>
             <input class="form-control" type="text" name="title" value="{{title}}">
-            <button class="btn btn-danger btn-small">Delete this document</button>
+            <button>Delete this document</button>
         </form>
-    </div>
 </template>
