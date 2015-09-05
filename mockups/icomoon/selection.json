@@ -1,0 +1,173 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M512 85.333q17.667 0 30.167 12.5t12.5 30.167v341.333h341.333q17.667 0 30.167 12.5t12.5 30.167-12.5 30.167-30.167 12.5h-341.333v341.333q0 17.667-12.5 30.167t-30.167 12.5-30.167-12.5-12.5-30.167v-341.333h-341.333q-17.667 0-30.167-12.5t-12.5-30.167 12.5-30.167 30.167-12.5h341.333v-341.333q0-17.667 12.5-30.167t30.167-12.5z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"plus"
+				],
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 24,
+				"code": 58880,
+				"name": "plus2"
+			},
+			"setIdx": 0,
+			"setId": 3,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M864 0c88.364 0 160 71.634 160 160 0 36.020-11.91 69.258-32 96l-64 64-224-224 64-64c26.742-20.090 59.978-32 96-32zM64 736l-64 288 288-64 592-592-224-224-592 592zM715.578 363.578l-448 448-55.156-55.156 448-448 55.156 55.156z"
+				],
+				"attrs": [],
+				"tags": [
+					"pencil",
+					"write",
+					"edit"
+				],
+				"defaultCode": 57357,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 64,
+				"order": 1,
+				"prevSize": 32,
+				"code": 59653,
+				"ligatures": "pencil, write",
+				"name": "pencil"
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 5
+		},
+		{
+			"icon": {
+				"paths": [
+					"M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM480 928c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384zM512 512v-128h128v-64h-128v-64h-64v64h-128v256h128v128h-128v64h128v64h64v-64h128.002l-0.002-256h-128zM448 512h-64v-128h64v128zM576.002 704h-64.002v-128h64.002v128z"
+				],
+				"attrs": [],
+				"tags": [
+					"coin-dollar",
+					"money",
+					"cash",
+					"currency-dollar"
+				],
+				"defaultCode": 57555,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 2,
+				"id": 1772,
+				"prevSize": 32,
+				"code": 59707,
+				"ligatures": "coin-dollar, money",
+				"name": "coin-dollar"
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 59
+		},
+		{
+			"icon": {
+				"paths": [
+					"M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
+				],
+				"attrs": [],
+				"tags": [
+					"plus",
+					"add",
+					"sum"
+				],
+				"defaultCode": 58230,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 986,
+				"order": 4,
+				"prevSize": 32,
+				"code": 59914,
+				"ligatures": "plus, add",
+				"name": "plus"
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 266
+		},
+		{
+			"icon": {
+				"paths": [
+					"M192 128l640 384-640 384z"
+				],
+				"attrs": [],
+				"tags": [
+					"play",
+					"player"
+				],
+				"defaultCode": 58245,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1001,
+				"order": 3,
+				"prevSize": 32,
+				"code": 59932,
+				"ligatures": "play3, player8",
+				"name": "play3"
+			},
+			"setIdx": 2,
+			"setId": 0,
+			"iconIdx": 284
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false,
+			"autoHost": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"quickUsageToken": {
+			"UntitledProject": "ZDZkYzNjM2E1YjY2ZDllYmUwOWVkMGMxZjZiZGJhYTkjMSMxNDQxMjY1Nzk0IyMj"
+		},
+		"fontHostingName": false
+	}
+}

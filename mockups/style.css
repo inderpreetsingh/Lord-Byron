@@ -1,0 +1,160 @@
+* {
+ margin:0;
+ padding:0;
+}
+.editor {
+ margin:100px 0 0 165px;
+ font-family: 'Crimson Text', serif;
+ max-width:727px;
+ color:#555;
+}
+
+.title {
+ font-size:60px;
+ line-height:66px; 
+ outline:none;
+ border:none;
+ width:100%;
+ margin-bottom:33px;
+ color:#222;
+}
+
+.content{
+ line-height:33px;
+ font-size:22px;
+ outline:none;
+ border:none;
+ width:100%;
+}
+
+.content p {
+ margin-bottom:33px;
+}
+.content  p:first-child{
+ font-size:25px;
+ color:#444;
+ line-height:36px;
+}
+.icon-cont {
+ position:fixed;
+ top:120px;
+ left:99px;
+ width:33px;
+ height:33px;
+ border:1px solid #111;
+ border-radius:50%;
+ text-align:center;
+}
+
+.add-new::before {
+ line-height:33px;
+}
+
+.btns{
+ margin:0 0 10px 10px;
+}
+.onoffswitch {
+ position:relative;
+ float:left;
+ margin-right:20px;
+ width:60px;
+ -webkit-user-select: none;
+ -moz-user-select:none;
+ -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+ display:none;
+}
+
+.onoffswitch-label {
+ display: block;
+ overflow: hidden; 
+ cursor: pointer;
+ border: 2px solid #999999;
+ border-radius:20px;
+}
+
+.onoffswitch-inner {
+ display: block;
+ width:200%;
+ margin-left:-100%;
+ transition:margin 0.3s ease-in 0s;
+ z-index:1;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+ display:block;
+ float: left;
+ width:50%;
+ height: 4px;
+ padding: 0;
+ line-height:30px;
+ font-size: 14px;
+ color: white;
+ box-sizing: border-box;
+}
+.onoffswitch-inner:before{
+ content: "ON";
+ padding-left: 10px;
+ background-color: green;
+ color: #fff;
+}
+
+.onoffswitch-inner:after{
+ content: "OFF";
+ padding-right: 10px;
+ background-color:#ddd;
+ color:#999;
+ text-align: right;
+}
+
+.onoffswitch-switch {
+ display: block;
+ width:15px;
+ height:15px;
+ margin:-6px 2px 0 0;
+ background:#fff;
+ position: absolute;
+ top:0;
+ bottom: 0;
+ right: 35px;
+ border: 2px solid #999;
+ border-radius: 20px;
+ transition: all 0.3s ease-in 0s;
+ z-index:2;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+ margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+ right: 0px;
+}
+
+.onoffswitch p{
+ font-family: 'sans-serif';
+ text-align:center;
+ margin-top:4px; 
+}
+
+.menu-bar {
+ height:66px;
+ line-height:66px;
+ clear:both;
+}
+
+.menu-bar nav{
+ margin-left:0px; 
+}
+nav a {
+text-decoration:none;
+ color:#333;
+ font-size:22px;
+ font-family:'sans-serif';
+ margin-right:20px;
+}
+.gap {
+height:10px;
+}
