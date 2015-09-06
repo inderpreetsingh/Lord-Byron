@@ -28,7 +28,7 @@ html {
      color:#555;
     min-height:800px;
 }
-#editor {
+#editor, .the-text {
      line-height:33px;
      font-size:22px;
      font-family: 'Crimson Text', serif;
@@ -40,6 +40,9 @@ html {
     background:transparent;
     color:#444;
     line-height:33px;
+    p {
+        margin-bottom:33px;
+    }
 }
 
  .icon-cont {
@@ -209,6 +212,48 @@ html {
 
 .icon-label{
     display:block;   
+}
+
+.verb {
+    color:#1abc9c;
+
+}
+
+.adjective {
+    color: #2980b9;   
+}
+
+.noun {
+    color: #c0392b;
+}
+
+.pronoun {
+    color: #d35400;
+}
+
+.adverb {
+    color: #8e44ad;
+}
+
+.highlight-btn {
+     color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+     background: rgb(28, 184, 65); 
+    border:none;
+    font-family:'Crimson Text';
+    line-height: 33px;
+    padding:5px;
+    font-size:22px;
+    cursor:pointer;
+    position:fixed;
+    top:10px;
+    right:10px;
+    
+}
+
+.btns-wrapper {
+       display:none;
 }
 
 @media screen and (max-width: 500px) {

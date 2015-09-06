@@ -77,10 +77,6 @@ Template.editor.helpers({
   }
 });
 
-Template.editor.rendered = function() {
- /*setInterval(function(){
-     $(".the-text").html(" ");
-      text = $("#editor").val();
-      $(".the-text").html(text);
- }, 100);*/
+Template.main.rendered = function() {
+ $('#sidr-toggle').sidr();
 }

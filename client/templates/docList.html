@@ -1,10 +1,13 @@
 <template name="docList">
+  <div class="margined">
    <div class="docs">
+        <h2> List of docs </h2>
         {{#each documents}}
-        {{> docItem}}
+       <p>{{> docItem}}</p>
         {{/each}}
     </div>   
            <div class="icon-cont">
             <button class="icon icon-plus2 add-new .flaticon-pen43">+</button> 
+    </div>
     </div>
 </template>

@@ -40,25 +40,30 @@ var highlight = function(){
 		if(checkedPOS[i] == "adjective"){
 			for(var i in adjective){
 				$('.'+adjective[i]).removeClass('inactive');
+$('.'+adjective[i]).addClass('adjective');
 			}
 		} else if(checkedPOS[i] == "noun"){
 			for(var i in noun){
 				$('.'+noun[i]).removeClass('inactive');
+                $('.'+noun[i]).addClass('noun');
 			}
 
 		} else if(checkedPOS[i] == "adverb"){
 			for(var i in adverb){
 				$('.'+adverb[i]).removeClass('inactive');
+                $('.'+adverb[i]).addClass('adverb');
 			}
 
 		} else if(checkedPOS[i] == "verb"){
 			for(var i in verb){
 				$('.'+verb[i]).removeClass('inactive');
+                $('.'+verb[i]).addClass('verb');
 			}
 
 		} else if(checkedPOS[i] == "pronoun"){
 			for(var i in pronoun){
 				$('.'+pronoun[i]).removeClass('inactive');
+                $('.'+pronoun[i]).addClass('pronoun');
 			}
 
 		}
@@ -70,6 +75,9 @@ Template.languageTools.events({
 		console.log("kithe aa bai");
 		baseString = $('#editor').val();
         	baseString = baseString.replace(/\n/g,' --EOL-- ');
+        $('#editor').css({"display":"none"});
+        $('.status').html("Grammer mode activated");
+        $('.btns-wrapper').css({"display":"block"});
         	tagify(baseString);
 	},
 
