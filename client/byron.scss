@@ -8,9 +8,7 @@ html {
     font-family: 'Crimson Text', serif;
 }
 
-.docs {
-    margin-left:-200%;
-}
+
 .title {
     border:none;
     background:none;
@@ -28,6 +26,7 @@ html {
      font-family: 'Crimson Text', serif;
      max-width:727px;
      color:#555;
+    min-height:800px;
 }
 #editor {
      line-height:33px;
@@ -84,16 +83,15 @@ html {
     background:rgba(255,255,255,0.5);
     border-top:rgba(0,0,0,0.5);
     position:fixed;
-    padding:20px;
     bottom: 0px;
     width:100%;
+    height: 80px;
 }
 
 .highlight-btns {
     width:700px;
-    margin-left:25%;
+    margin:auto;
     z-index:150;
-    position:fixed;
     bottom:0px;
 }
 
@@ -105,12 +103,13 @@ html {
 .btns-jugaad {
      position:fixed;
      bottom:0px;
-    width:100%;
+     width:100%;
 }
 
 .convert-btns{
     width:300px;
     margin:auto;
+    margin-bottom:-80px;
 }
 
 .highlight-btns:after{
@@ -199,6 +198,14 @@ html {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
  right: 0px;
 }
+.margined {
+    margin-left:150px;
+    li {
+        line-height:2;
+    }
+}
+
+.icon {width:100%; cursor:pointer;}
 
 .icon-label{
     display:block;   
@@ -208,8 +215,16 @@ html {
     onoffswitch {
       width: 30px;
     }
-    body {
-        background-color: lightblue;
+    .margined {
+        margin-left:20px;
+    }
+    .editor {
+        margin-left:50px;
+        margin-top:50px;
+    }
+    .icon-cont {
+         top:50px;
+        left:5px;
     }
 }
 
