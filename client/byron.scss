@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+* {
+ margin:0;
+ padding:0;
+}
+html {
+    background:#fffff5;
+    font-family: 'Crimson Text', serif;
+}
+
+.docs {
+    margin-left:-200%;
+}
+.title {
+    border:none;
+    background:none;
+    font-size:60px;
+    line-height:66px; 
+    outline:none;
+    border:none;
+    width:100%;
+    margin-bottom:33px;
+    color:#222;
+    font-family: 'Crimson Text', serif;
+}
+.editor {
+     margin:100px 0 0 165px;
+     font-family: 'Crimson Text', serif;
+     max-width:727px;
+     color:#555;
+}
+#editor {
+     line-height:33px;
+     font-size:22px;
+     font-family: 'Crimson Text', serif;
+     outline:none;
+     border:none;
+     width:100%;
+    overflow:hidden;
+    height:800px;
+    background:transparent;
+    color:#444;
+    line-height:33px;
+}
+
+ .icon-cont {
+ position:fixed;
+ top:120px;
+ left:99px;
+ width:33px;
+ height:33px;
+ border:1px solid #111;
+ border-radius:50%;
+ text-align:center;
+}
+
+.add-new::before {
+ line-height:33px;
+}
+.add-new {
+  background:transparent;
+    border:none;
+    font-size:18px;
+    line-height:33px;
+}
+
+.highlight-btn {
+        
+}
+
+.conversion-btn {
+    border:none;
+    box-shadow: none;
+    background: rgba(255,255,255,0.5);
+    margin-left: 10px;
+}
+
+.conversion-btn > img{
+        width:50px;
+        height:50px;
+}
+
+.btns-container{
+    background:rgba(255,255,255,0.5);
+    border-top:rgba(0,0,0,0.5);
+    position:fixed;
+    padding:20px;
+    bottom: 0px;
+    width:100%;
+}
+
+.highlight-btns {
+    width:700px;
+    margin-left:25%;
+    z-index:150;
+    position:fixed;
+    bottom:0px;
+}
+
+.btns{
+    height:80px;
+    transition: .5s bottom ease-in-out;
+}
+
+.btns-jugaad {
+     position:fixed;
+     bottom:0px;
+    width:100%;
+}
+
+.convert-btns{
+    width:300px;
+    margin:auto;
+}
+
+.highlight-btns:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.onoffswitch {
+ position:relative;
+ float:left;
+ margin-right:66px;
+ width:60px;
+ -webkit-user-select: none;
+ -moz-user-select:none;
+ -ms-user-select: none;
+    text-align:center;
+}
+
+.onoffswitch-checkbox {
+ display:none;
+}
+
+.onoffswitch-label {
+ display: block;
+ overflow: hidden; 
+ cursor: pointer;
+ border: 2px solid #999999;
+ border-radius:20px;
+}
+
+.onoffswitch-inner {
+ display: block;
+ width:200%;
+ margin-left:-100%;
+ transition:margin 0.3s ease-in 0s;
+ z-index:1;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+ display:block;
+ float: left;
+ width:50%;
+ height: 4px;
+ padding: 0;
+ line-height:30px;
+ font-size: 14px;
+ color: white;
+ box-sizing: border-box;
+}
+.onoffswitch-inner:before{
+ content: "ON";
+ padding-left: 10px;
+ background-color: green;
+ color: #fff;
+}
+
+.onoffswitch-inner:after{
+ content: "OFF";
+ padding-right: 10px;
+ background-color:#ddd;
+ color:#999;
+ text-align: right;
+}
+
+.onoffswitch-switch {
+ display: block;
+ width:15px;
+ height:15px;
+ margin:-6px 2px 0 0;
+ background:#fff;
+ position: absolute;
+ top:0;
+ bottom: 0;
+ right: 35px;
+ border: 2px solid #999;
+ border-radius: 20px;
+ transition: all 0.3s ease-in 0s;
+ z-index:2;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+ margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+ right: 0px;
+}
+
+.icon-label{
+    display:block;   
+}
+
+@media screen and (max-width: 500px) {
+    onoffswitch {
+      width: 30px;
+    }
+    body {
+        background-color: lightblue;
+    }
+}
+

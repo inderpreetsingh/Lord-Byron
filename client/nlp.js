@@ -35,6 +35,16 @@ Template.languageTools.events({
         baseString = baseString.replace(/\n/g,' --EOL-- ');
         tagify(baseString);
     },
+    
+    'click .convert-btn': function(e){
+        $('.convert-btns').css('margin-bottom', '0');
+        $('.highlight-btns').css('margin-bottom', '70px');
+    },
+    
+    'click .highlight-btn': function(e){
+        $('.convert-btns').css('bottom', '-70px');
+        $('.highlight-btns').css('bottom', '0px');
+    },
 
 	'click .conversion-btn':function(e){
         baseString = $('#editor').val();

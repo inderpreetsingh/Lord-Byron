@@ -1,0 +1,7 @@
+<template name="editor">
+    {{#with docid}}
+        {{> docTitle this}}
+            {{> sharejsText docid=this id="editor" }}
+            {{> viewMode }}
+    {{/with}}
+</template>

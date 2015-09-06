@@ -1,52 +1,8 @@
 <head>
   <title> Lord Byron </title>
+  <link rel="stylesheet" href="/icons/MyIcons/flaticon.css">
 </head>
 
 <body>  
-    {{> main}}
+    {{> yield}}
 </body>
-
-<template name="main">
- 
-         {{> docList}}             
- 
-                {{> editor}}
-                
- 		        {{> languageTools}}
- 		        
-                {{! placeholder}}
-            
-</template>
-
-<template name="docList">
-    {{#each documents}}
-    {{> docItem}}
-    {{/each}}
-    <button >New document</button>    
-</template>
-
-<template name="docItem">
-    <li class="{{#if current}}active{{/if}}">
-         <a href="#">{{title}}</a>
-    </li>
-</template>
-
-<template name="editor">
-    {{#with docid}}
-        {{> docTitle this}}
-            {{> sharejsText docid=this id="editor"}}
-            {{> viewMode }}
-    {{/with}}
-</template>
-
-<template name="viewMode">
-    <div class="the-text">
-    </div>
-</template>
-
-<template name="docTitle">
-        <form>
-            <input class="form-control" type="text" name="title" value="{{title}}">
-            <button>Delete this document</button>
-        </form>
-</template>

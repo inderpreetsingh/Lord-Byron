@@ -1,12 +1,58 @@
 <template name="languageTools">
-	<button class="btn highlight-btn">Edit</button>
-	<button class="btn conversion-btn">Convert</button>
+<div class="btns-container">
+<button class="btn highlight-btn">Edit</button>
+<button class="btn convert-btn">Convert</button>
+    <div class="btns-wrapper">
+  	<div class="btns highlight-btns">
+	<div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-adjective">
+  <label class="onoffswitch-label" for="myonoffswitch-adjective">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+ </label>
+ <p>Adjective</p>
+</div>
+<div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-noun">
+  <label class="onoffswitch-label" for="myonoffswitch-noun">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+ </label>
+ <p>Noun</p>
+</div>
+<div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-adverb">
+  <label class="onoffswitch-label" for="myonoffswitch-adverb">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+ </label>
+ <p>Adverb</p>
+</div>
+        <div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-verb">
+  <label class="onoffswitch-label" for="myonoffswitch-verb">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+ </label>
+ <p>Verb</p>
+</div>
+<div class="onoffswitch">
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-pronoun">
+  <label class="onoffswitch-label" for="myonoffswitch-pronoun">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+ </label>
+ <p>Pronoun</p>
+</div>
+        </div>
 
-	<form class="highlight-form">
-		<label><input type="checkbox" class="highlight-checkbox" name="speech" value="Adjective">Adjective</label>
-		<label><input type="checkbox" class="highlight-checkbox" name="speech" value="Noun">Noun</label>
-		<label><input type="checkbox" class="highlight-checkbox" name="speech" value="Adverb">Adverb</label>
-		<label><input type="checkbox" class="highlight-checkbox" name="speech" value="Verb">Verb</label>
-		<label><input type="checkbox" class="highlight-checkbox" name="speech" value="Pronoun">Pronoun</label>
-	</form>
+   <div class="btns-jugaad">    
+       <div class="btns convert-btns">
+        <button class="btn conversion-btn"><img src="icons/past-icon.png"> <span class="icon-label">To Past</span> </button>
+        <button class="btn conversion-btn"><img src="icons/present-icon.png"><span class="icon-label">In Present</span> </button>
+        <button class="btn conversion-btn"><img src="icons/future-icon.png"> <span class="icon-label">Into Future</span></button>
+    </div>
+    </div>
+        <div></div></div>
+    </div>
 </template>
