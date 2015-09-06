@@ -29,35 +29,90 @@ var tagify = function(baseString) {
 }
 
 
+var highlight = function(){
+	adjective = [ "JJ", "JJR", "JJS"];
+	verb = ["VB", "VBD", "VBN", "VBP", "VBZ", "VBF", "CP", "VBG"];
+	adverb = ["RB", "RBR", "RBS"];
+	noun = ["NN", "NNP", "NNPA", "NNAB", "NNPS", "NNS", "NNO", "NG"];
+	pronoun = ["PRP", "PP"];
+
+	for(var i in checkedPOS){
+		if(checkedPOS[i] == "adjective"){
+			for(var i in adjective){
+				$('.'+adjective[i]).removeClass('inactive');
+			}
+		} else if(checkedPOS[i] == "noun"){
+			for(var i in noun){
+				$('.'+noun[i]).removeClass('inactive');
+			}
+
+		} else if(checkedPOS[i] == "adverb"){
+			for(var i in adverb){
+				$('.'+adverb[i]).removeClass('inactive');
+			}
+
+		} else if(checkedPOS[i] == "verb"){
+			for(var i in verb){
+				$('.'+verb[i]).removeClass('inactive');
+			}
+
+		} else if(checkedPOS[i] == "pronoun"){
+			for(var i in pronoun){
+				$('.'+pronoun[i]).removeClass('inactive');
+			}
+
+		}
+	}
+}
+
 Template.languageTools.events({
 	'click .highlight-btn': function(e){
+		console.log("kithe aa bai");
 		baseString = $('#editor').val();
-        baseString = baseString.replace(/\n/g,' --EOL-- ');
-        tagify(baseString);
-    },
-    
-    'click .convert-btn': function(e){
-        $('.convert-btns').css('margin-bottom', '0');
-        $('.highlight-btns').css('margin-bottom', '70px');
-    },
-    
-    'click .highlight-btn': function(e){
-        $('.convert-btns').css('bottom', '-70px');
-        $('.highlight-btns').css('bottom', '0px');
-    },
-
-	'click .conversion-btn':function(e){
-        baseString = $('#editor').val();
-        baseString = baseString.replace(/\n/g,' --EOL-- ');
-        var sentences = nlp.pos(baseString).sentences;
-        convertedString = "";
-        for (sentence in sentences) {
-            convertedString = convertedString + sentences[sentence].to_future().text();
-        }
-        tagify(convertedString);
+        	baseString = baseString.replace(/\n/g,' --EOL-- ');
+        	tagify(baseString);
 	},
 
-	'change .highlight-checkbox': function(e){
-        
-    }
+	'click .future-btn':function(e){
+        	baseString = $('#editor').val();
+                baseString = baseString.replace(/\n/g,' --EOL-- ');
+                var sentences = nlp.pos(baseString).sentences;
+                convertedString = "";
+                for (sentence in sentences) {
+                    convertedString = convertedString + sentences[sentence].to_future().text();
+                }
+                tagify(convertedString);
+	},
+
+	'click .past-btn':function(e){
+        	baseString = $('#editor').val();
+                baseString = baseString.replace(/\n/g,' --EOL-- ');
+                var sentences = nlp.pos(baseString).sentences;
+                convertedString = "";
+                for (sentence in sentences) {
+                    convertedString = convertedString + sentences[sentence].to_past().text();
+                }
+                tagify(convertedString);
+	},
+
+	'click .present-btn':function(e){
+        	baseString = $('#editor').val();
+                baseString = baseString.replace(/\n/g,' --EOL-- ');
+                var sentences = nlp.pos(baseString).sentences;
+                convertedString = "";
+                for (sentence in sentences) {
+                    convertedString = convertedString + sentences[sentence].to_present().text();
+                }
+                tagify(convertedString);
+	},
+
+	'click .onoffswitch-checkbox': function(e){
+        	checkedPOS = [];
+		switchesOn = $("input:checkbox[name='onoffswitch']:checked");
+		switchesOn.each(function(){
+			checkedPOS.push($(this).val());
+		});
+		highlight();
+	}
+		
 });
