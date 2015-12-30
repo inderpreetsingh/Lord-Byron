@@ -85,7 +85,6 @@ html {
 .btns-container{
     background:rgba(255,255,255,0.5);
     border-top:rgba(0,0,0,0.5);
-    position:fixed;
     bottom: 0px;
     width:100%;
     height: 80px;
@@ -273,3 +272,13 @@ html {
     }
 }
 
+.logo{
+opacity:0.3;
+>img {
+	position:fixed;
+	top:150px;	
+	right:100px;
+	max-width:300px;
+	height:auto;
+}
+}
