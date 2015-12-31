@@ -26,3 +26,11 @@ To install Lord byron, you need to first install meteor.
 </br></br>
 <p>Go into lord byron directory and run meteor command</p></br>
 <code> meteor</code>
+
+##Screenshots
+Note in lord-byron
+![Hackathon](/public/screenshots/1.png)
+Grammar mode in lord-byron
+![Hackathon](/public/screenshots/2.png)
+Highlighting parts of speech in lord-byron
+![Hackathon](/public/screenshots/3.png)
