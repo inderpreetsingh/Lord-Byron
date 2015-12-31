@@ -17,11 +17,12 @@ Apart from being real time the main feature of this editor is to check grammar. 
 
 ##Installing Lord Byron ?
 To install Lord byron, you need to first install meteor.
-<b> Install Meteor</b>
+</br></br>
+<b> Install Meteor</b></br>
 <code> curl http://install.meteor.com | sh </code>
-</br>
-<b> Clone Lord Byron </b>
+</br></br>
+<b> Clone Lord Byron </b></br>
 <code> git clone https://github.com/inderpreetsingh/lord-byron.git </code>
-</br>
-<p>Go into lord byron directory and run meteor command</p>
+</br></br>
+<p>Go into lord byron directory and run meteor command</p></br>
 <code> meteor</code>
