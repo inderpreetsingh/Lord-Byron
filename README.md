@@ -1,5 +1,7 @@
 #Lord Byron
 
+[![Join the chat at https://gitter.im/inderpreetsingh/Lord-Byron](https://badges.gitter.im/inderpreetsingh/Lord-Byron.svg)](https://gitter.im/inderpreetsingh/Lord-Byron?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ##Story behind Lord byron
 
 Lord byron came into existence at punjab's first 36 hours hackathon. This hackathon was hosted by TCY (Top Carreres & You) Ludhiana. </br>
