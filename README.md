@@ -1,8 +1,8 @@
-#Lord Byron
+# Lord Byron
 
-##Story behind Lord byron
+## Story behind Lord byron
 
-Lord byron came into existence at punjab's first 36 hours hackathon. This hackathon was hosted by TCY (Top Carreres & You) Ludhiana. </br>
+Lord byron came into existence at punjab's first 36 hours hackathon. This hackathon was hosted by TCY (Top Careeres & You) Ludhiana. </br>
 We were 4 developers and registered in this hackathon as a team named Ishwerdas. Everyone liked the idea and technology behind Lord byron.</br>
 Lord byron was titled as most innovative project in education category in this hackathon. yayy!</br>
 
